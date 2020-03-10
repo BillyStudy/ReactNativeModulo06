@@ -1,17 +1,16 @@
 import React from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 
 import './config/ReactotronConfig';
+import Routes from './routes';
 
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor={"#fafafa"} />
-      <SafeAreaView>
-          
-      </SafeAreaView>
+      <StatusBar backgroundColor="#3d51bf" barStyle='light-content' />
+      <Routes />
     </>
-  );
+  )
 };
 
 export default App;
