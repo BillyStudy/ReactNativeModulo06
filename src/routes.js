@@ -12,15 +12,18 @@ const Routes = createAppContainer(
             User,
         },
         {
-            headerLayoutPreset: 'center',
-            defaultNavigationOptions: {
-                headerStyle:{
-                    backgroundColor: '#3d51bf',
-                    elevation: 20,
-                },
-                headerTintColor: '#fafafa',
-            }
+            headerMode: 'none'
         }
+        // {
+        //     headerLayoutPreset: 'center',
+        //     defaultNavigationOptions: {
+        //         headerStyle:{
+        //             backgroundColor: '#3d51bf',
+        //             elevation: 20,
+        //         },
+        //         headerTintColor: '#fafafa',
+        //     }
+        // }
     )
 
 );
