@@ -3,10 +3,10 @@ import {RectButton} from 'react-native-gesture-handler';
 
 export const Header = styled.View`
   flex-direction: row;
-  height: 60px;
-  padding: 10px 30px;
+  height: 80px;
+  padding: 20px 30px;
   background-color: #000;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
 

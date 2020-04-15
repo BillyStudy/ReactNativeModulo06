@@ -61,6 +61,11 @@ export default class Main extends Component {
     }
   }
 
+  handleNavigate = user => {
+    const {navigation} = this.props;
+    navigation.navigate('User', {user});
+  };
+
   render() {
     const {users, newUser, loading} = this.state;
     return (
@@ -91,7 +96,9 @@ export default class Main extends Component {
                   <Name>{item.name}</Name>
                   <Bio>{item.bio}</Bio>
                 </View>
-                <ProfileButton loading={loading}>
+                <ProfileButton
+                  loading={loading}
+                  onPress={() => this.handleNavigate(item)}>
                   {loading ? (
                     <ActivityIndicator color="#fafafa" />
                   ) : (
